@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: c2d191381ce4046ffa487f1725e6732a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ambientLoop: {fileID: 8300000, guid: 1eec81f7ecd9d4c729cb009d788f2fad, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
