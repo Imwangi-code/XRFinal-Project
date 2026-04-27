@@ -20,6 +20,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/LineRendering.unity
     guid: 51b1fa94f529d4401bf0326ba3fc9d83
+  - enabled: 0
+    path: Assets/Scenes/Particle Testing.unity
+    guid: bcc7b485104a04a04abb470191f0dada
+  - enabled: 0
+    path: Assets/Samples/PolySpatial/Scenes/InputDataVisualization.unity
+    guid: 75f1bad34defd4c1cb72f9582141573c
+  - enabled: 0
+    path: Assets/Samples/PolySpatial/Scenes/Manipulation.unity
+    guid: fb95a2aeaf07045218ea81669afb9cc3
+  - enabled: 1
+    path: Assets/Scenes/HandVisualizer.unity
+    guid: 2c966d0a34e8d48c1967a144a369e208
   m_configObjects:
     UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: 25e1f68848051c946b9048e8426e646c, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: bb65518a4a80049acbc5e85e70dbbee0, type: 2}
