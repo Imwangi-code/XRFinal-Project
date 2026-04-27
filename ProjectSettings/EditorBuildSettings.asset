@@ -14,12 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BreathTrack.unity
     guid: ff52613ad17dc4262a0df4055d59acd9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MR Skybox.unity
     guid: 0fa630021855749ce998d955c251eedb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LineRendering.unity
-    guid: 51b1fa94f529d4401bf0326ba3fc9d83
+    guid: be6bbb8ad3fc149158d784d50cb3890e
   m_configObjects:
     UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: 25e1f68848051c946b9048e8426e646c, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: bb65518a4a80049acbc5e85e70dbbee0, type: 2}
