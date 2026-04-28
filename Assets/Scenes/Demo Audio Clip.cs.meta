@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - ambientLoop: {fileID: 8300000, guid: 1eec81f7ecd9d4c729cb009d788f2fad, type: 3}
+  - ambientLoop: {fileID: 8300000, guid: a8c44375eb3784adeb7985c1b0e9b63d, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
