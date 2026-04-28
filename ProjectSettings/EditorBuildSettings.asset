@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MR Skybox.unity
     guid: 0fa630021855749ce998d955c251eedb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LineRendering.unity
     guid: be6bbb8ad3fc149158d784d50cb3890e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HandVisualizer.unity
     guid: 2c966d0a34e8d48c1967a144a369e208
   m_configObjects:
