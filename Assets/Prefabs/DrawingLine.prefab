@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1065482507511942151}
   - component: {fileID: 6735444763939805953}
-  - component: {fileID: -722442159863097010}
+  - component: {fileID: 8654781235268323676}
   m_Layer: 0
   m_Name: DrawingLine
   m_TagString: Untagged
@@ -143,7 +143,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!65 &-722442159863097010
+--- !u!65 &8654781235268323676
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
