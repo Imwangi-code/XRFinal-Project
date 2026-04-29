@@ -1925,6 +1925,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: tiredSky
+      value: 
+      objectReference: {fileID: 2100000, guid: 36164e474bc1f4644ae61b892f89883f, type: 2}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: anxiousSky
+      value: 
+      objectReference: {fileID: 2100000, guid: 814c1391441a74b4eb1cbdfcf0c26bdc, type: 2}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: voiceCoach
       value: 
       objectReference: {fileID: 647367189}
@@ -1933,13 +1941,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1553963788}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: creativeSky
+      value: 
+      objectReference: {fileID: 2100000, guid: e3ccad186863c43918b40ce9dcdefaca, type: 2}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: drawManager
       value: 
       objectReference: {fileID: 1497319763}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: stressedSky
+      value: 
+      objectReference: {fileID: 2100000, guid: 29910ea8ea8e7414f8276bdf26d54b43, type: 2}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: tiredAmbient
+      value: 
+      objectReference: {fileID: 8300000, guid: 009a9a0ce549843a8a6a63a00357ce11, type: 3}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: skyCloudShell
       value: 
       objectReference: {fileID: 1141317861}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: anxiousAmbient
+      value: 
+      objectReference: {fileID: 8300000, guid: 3caf1e8c5de1947859a7c8c1b3751156, type: 3}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: skyboxRenderer
+      value: 
+      objectReference: {fileID: 1141317861}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: creativeAmbient
+      value: 
+      objectReference: {fileID: 8300000, guid: 8131be42bd38f47b9a30b245920cf721, type: 3}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: stressedAmbient
+      value: 
+      objectReference: {fileID: 8300000, guid: fcb3e397dcb8b4805beff911f710e6db, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
