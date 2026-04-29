@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 10628413}
   - component: {fileID: 10628412}
   - component: {fileID: 10628411}
+  - component: {fileID: 10628414}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -264,6 +265,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10628409}
   m_CullTransparentMesh: 1
+--- !u!65 &10628414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10628409}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &35420634
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &402021527
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1011,6 +1033,7 @@ GameObject:
   - component: {fileID: 548905952}
   - component: {fileID: 548905951}
   - component: {fileID: 548905954}
+  - component: {fileID: 548905955}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1158,6 +1181,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningMenuManager
   moodPanel: {fileID: 2005452664}
   timePanel: {fileID: 402021526}
+--- !u!65 &548905955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548905949}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &662456119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1436,7 @@ GameObject:
   - component: {fileID: 681885495}
   - component: {fileID: 681885494}
   - component: {fileID: 681885493}
+  - component: {fileID: 681885496}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1525,6 +1570,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681885491}
   m_CullTransparentMesh: 1
+--- !u!65 &681885496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681885491}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,6 +2632,7 @@ GameObject:
   - component: {fileID: 1351454160}
   - component: {fileID: 1351454159}
   - component: {fileID: 1351454158}
+  - component: {fileID: 1351454161}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -2699,6 +2766,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351454156}
   m_CullTransparentMesh: 1
+--- !u!65 &1351454161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351454156}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1392410005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2830,6 +2918,7 @@ GameObject:
   - component: {fileID: 1400514764}
   - component: {fileID: 1400514763}
   - component: {fileID: 1400514762}
+  - component: {fileID: 1400514765}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -2963,6 +3052,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400514760}
   m_CullTransparentMesh: 1
+--- !u!65 &1400514765
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400514760}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1432473070
 GameObject:
   m_ObjectHideFlags: 0
@@ -3161,6 +3271,7 @@ GameObject:
   - component: {fileID: 1501871798}
   - component: {fileID: 1501871797}
   - component: {fileID: 1501871796}
+  - component: {fileID: 1501871799}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -3294,6 +3405,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501871794}
   m_CullTransparentMesh: 1
+--- !u!65 &1501871799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501871794}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1518702149
 GameObject:
   m_ObjectHideFlags: 0
@@ -3977,7 +4109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2005452665
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4151,6 +4283,7 @@ GameObject:
   - component: {fileID: 2022829768}
   - component: {fileID: 2022829767}
   - component: {fileID: 2022829766}
+  - component: {fileID: 2022829769}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -4284,6 +4417,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022829764}
   m_CullTransparentMesh: 1
+--- !u!65 &2022829769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022829764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2064784807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,6 +4450,7 @@ GameObject:
   - component: {fileID: 2064784811}
   - component: {fileID: 2064784810}
   - component: {fileID: 2064784809}
+  - component: {fileID: 2064784812}
   m_Layer: 5
   m_Name: Button (6)
   m_TagString: Untagged
@@ -4429,6 +4584,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064784807}
   m_CullTransparentMesh: 1
+--- !u!65 &2064784812
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064784807}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2124014886
 GameObject:
   m_ObjectHideFlags: 0
@@ -4441,6 +4617,7 @@ GameObject:
   - component: {fileID: 2124014890}
   - component: {fileID: 2124014889}
   - component: {fileID: 2124014888}
+  - component: {fileID: 2124014891}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -4574,6 +4751,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124014886}
   m_CullTransparentMesh: 1
+--- !u!65 &2124014891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124014886}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1418575410486476227
 MonoBehaviour:
   m_ObjectHideFlags: 0

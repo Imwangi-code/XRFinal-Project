@@ -2466,6 +2466,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 814c1391441a74b4eb1cbdfcf0c26bdc, type: 2}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: tiredVoice
+      value: 
+      objectReference: {fileID: 8300000, guid: f3ff91df19e2041acb55cf294b37f484, type: 3}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: voiceCoach
       value: 
       objectReference: {fileID: 647367189}
@@ -2486,13 +2490,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 29910ea8ea8e7414f8276bdf26d54b43, type: 2}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: anxiousVoice
+      value: 
+      objectReference: {fileID: 8300000, guid: d6008e853122e47ba8d783803348ffe4, type: 3}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: tiredAmbient
       value: 
       objectReference: {fileID: 8300000, guid: 009a9a0ce549843a8a6a63a00357ce11, type: 3}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: creativeVoice
+      value: 
+      objectReference: {fileID: 8300000, guid: 1fa302e002dee4d34bd44335bb6c4470, type: 3}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: skyCloudShell
       value: 
       objectReference: {fileID: 1141317861}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: stressedVoice
+      value: 
+      objectReference: {fileID: 8300000, guid: 39a6ca26bae214c15b3fb212ca9018a8, type: 3}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: anxiousAmbient
       value: 
