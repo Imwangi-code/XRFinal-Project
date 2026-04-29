@@ -9,6 +9,10 @@ public class BreathVisualizer : MonoBehaviour
     public float maxScale = 0.05f;
     public float growSpeed = 2.0f;
 
+    [Header("Color Settings")]
+    public Color inhaleColor = Color.green;
+    public Color exhaleColor = Color.blue;
+
     private Vector3 _targetScale;
 
     void Update()
@@ -23,7 +27,7 @@ public class BreathVisualizer : MonoBehaviour
         transform.localScale = Vector3.Lerp(transform.localScale, _targetScale, Time.deltaTime * growSpeed);
 
         //3. Changes color of object
-        GetComponent<Renderer>().material.color = Color.Lerp(Color.green, Color.blue, (transform.localScale.x - minScale) / (maxScale - minScale));
+        GetComponent<Renderer>().material.color = Color.Lerp(inhaleColor, exhaleColor, (transform.localScale.x - minScale) / (maxScale - minScale));
    
     }
 }
