@@ -448,7 +448,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 1eec81f7ecd9d4c729cb009d788f2fad, type: 3}
+  m_Resource: {fileID: 8300000, guid: d6008e853122e47ba8d783803348ffe4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -840,11 +840,11 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647367182}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 1eec81f7ecd9d4c729cb009d788f2fad, type: 3}
+  m_Resource: {fileID: 8300000, guid: d6008e853122e47ba8d783803348ffe4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2461,6 +2461,10 @@ PrefabInstance:
       propertyPath: tiredSky
       value: 
       objectReference: {fileID: 2100000, guid: 36164e474bc1f4644ae61b892f89883f, type: 2}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: anxiousSky
       value: 
