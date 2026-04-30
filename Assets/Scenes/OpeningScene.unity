@@ -926,7 +926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &402021527
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4122,8 +4122,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1938300517}
   - {fileID: 681885492}
+  - {fileID: 1938300517}
   - {fileID: 10628410}
   - {fileID: 1501871795}
   - {fileID: 1400514761}
