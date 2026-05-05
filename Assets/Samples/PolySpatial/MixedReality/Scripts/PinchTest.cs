@@ -1,5 +1,5 @@
-//Modified from PinchSpawn.cs from PolySpatial.Samples
 using UnityEngine;
+
 #if UNITY_INCLUDE_XR_HANDS
 using UnityEngine.XR.Hands;
 using UnityEngine.XR.Management;
@@ -33,10 +33,7 @@ public class PinchTest : MonoBehaviour
     void Start()
     {
         GetHandSubsystem();
-        
-        // NEW: Using raw threshold for World Space. 
-        // OLD: m_ScaledThreshold = k_PinchThreshold / m_PolySpatialCameraTransform.localScale.x;
-        m_ScaledThreshold = k_PinchThreshold; 
+        m_ScaledThreshold = k_PinchThreshold / m_PolySpatialCameraTransform.localScale.x;
     }
 
     void Update()
@@ -48,6 +45,7 @@ public class PinchTest : MonoBehaviour
 
         if ((updateSuccessFlags & XRHandSubsystem.UpdateSuccessFlags.RightHandRootPose) != 0)
         {
+            // assign joint values
             m_RightIndexTipJoint = m_HandSubsystem.rightHand.GetJoint(XRHandJointID.IndexTip);
             m_RightThumbTipJoint = m_HandSubsystem.rightHand.GetJoint(XRHandJointID.ThumbTip);
 
@@ -56,6 +54,7 @@ public class PinchTest : MonoBehaviour
 
         if ((updateSuccessFlags & XRHandSubsystem.UpdateSuccessFlags.LeftHandRootPose) != 0)
         {
+            // assign joint values
             m_LeftIndexTipJoint = m_HandSubsystem.leftHand.GetJoint(XRHandJointID.IndexTip);
             m_LeftThumbTipJoint = m_HandSubsystem.leftHand.GetJoint(XRHandJointID.ThumbTip);
 
@@ -109,23 +108,18 @@ public class PinchTest : MonoBehaviour
         {
             Vector3 indexPOS = Vector3.zero;
             Vector3 thumbPOS = Vector3.zero;
+            indexPOS += new Vector3(0, 4, 0);
 
             if (index.TryGetPose(out Pose indexPose))
             {
-                // NEW: Use World Position
-                indexPOS = indexPose.position;
-                
-                // OLD (Revert if needed): 
-                // indexPOS = m_PolySpatialCameraTransform.InverseTransformPoint(indexPose.position);
+                // adjust transform relative to the PolySpatial Camera transform
+                indexPOS = m_PolySpatialCameraTransform.InverseTransformPoint(indexPose.position);
             }
 
             if (thumb.TryGetPose(out Pose thumbPose))
             {
-                // NEW: Use World Position
-                thumbPOS = thumbPose.position;
-                
-                // OLD (Revert if needed):
-                // thumbPOS = m_PolySpatialCameraTransform.InverseTransformPoint(thumbPose.position);
+                // adjust transform relative to the PolySpatial Camera adjustments
+                thumbPOS = m_PolySpatialCameraTransform.InverseTransformPoint(thumbPose.position);
             }
 
             var pinchDistance = Vector3.Distance(indexPOS, thumbPOS);
