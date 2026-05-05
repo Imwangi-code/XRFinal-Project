@@ -764,7 +764,7 @@ MonoBehaviour:
   m_OutputConfiguration: {fileID: 11400000, guid: 6bbe5ea8b330c4754ab7928a1a1999c2, type: 2}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3221225783
   OpenWindowOnLoad: 1
   m_TargetDisplay: 0
   m_ShowVolumeCameraEventsFoldout: 0
@@ -923,6 +923,8 @@ MonoBehaviour:
   minScale: 0.1
   maxScale: 0.5
   growSpeed: 2
+  inhaleColor: {r: 0, g: 1, b: 0, a: 1}
+  exhaleColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!23 &647367186
 MeshRenderer:
   m_ObjectHideFlags: 0
