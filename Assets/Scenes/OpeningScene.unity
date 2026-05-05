@@ -2249,9 +2249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6599802745974732893, guid: 53e239d6e4e1b41adbae5642d2e063e8, type: 3}
       propertyPath: m_text
-      value: 'Select
-
-'
+      value: Select
       objectReference: {fileID: 0}
     - target: {fileID: 6599802745974732893, guid: 53e239d6e4e1b41adbae5642d2e063e8, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
