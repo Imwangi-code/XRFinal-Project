@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MeditationManager : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class MeditationManager : MonoBehaviour
     public GameObject doorPromptUI;
     public AudioSource voiceCoach;
     public AudioSource ambientLoop;
+
+    [Header("Transition Settings")]
+    [Tooltip("The exact name of the scene to load when finished")]
+    public string nextSceneName;
 
     [Header("Anxious Settings")]
     public Material anxiousSky;
@@ -95,5 +100,20 @@ public class MeditationManager : MonoBehaviour
 
         // Time is up! 
         if (ambientLoop != null) ambientLoop.Stop();
+
+        //Switch to next scene
+        SwitchToNextScene();
+    }
+
+    private void SwitchToNextScene()
+    {
+        if (!string.IsNullOrEmpty(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            Debug.LogError("Next scene name is not set in MeditationManager.");
+        }
     }
 }
