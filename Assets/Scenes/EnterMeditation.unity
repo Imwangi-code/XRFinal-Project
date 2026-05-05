@@ -2506,6 +2506,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 1fa302e002dee4d34bd44335bb6c4470, type: 3}
     - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
+      propertyPath: nextSceneName
+      value: PeacefulScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145880102454171944, guid: 577405872f94947858ed4c3f25af41c5, type: 3}
       propertyPath: skyCloudShell
       value: 
       objectReference: {fileID: 1141317861}
