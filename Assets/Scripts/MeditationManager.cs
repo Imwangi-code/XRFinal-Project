@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using TMPro; // Required for TextMeshPro Dropdowns
 
 public class MeditationManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class MeditationManager : MonoBehaviour
     public GameObject doorPromptUI;
     public AudioSource voiceCoach;
     public AudioSource ambientLoop;
+
+    public TMP_Dropdown moodDropdown; // Reference to the Mood Dropdown in the scene
+    public TMP_Dropdown timeDropdown; // Reference to the Time Dropdown in the scene
 
     [Header("Transition Settings")]
     [Tooltip("The exact name of the scene to load when finished")]
@@ -38,7 +42,13 @@ public class MeditationManager : MonoBehaviour
     void Start()
     {
         // 1. Turn off drawing initially
-        if (drawManager != null) drawManager.SetActive(false);
+        if (drawManager != null)
+        {
+            drawManager.SetActive(false);
+            // Grab the script and tell it it's officially allowed to draw now
+            drawManager.GetComponent<HandDrawer>().canDraw = true; 
+        }
+
         if (doorPromptUI != null) doorPromptUI.SetActive(false);
 
         // 2. Read the "backpack" and set the environment

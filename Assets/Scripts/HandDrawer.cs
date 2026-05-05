@@ -12,7 +12,10 @@ public class HandDrawer : MonoBehaviour
     public float pointSpacing = 0.01f; 
 
     private LineRenderer currentLine;
-    private Vector3 previousPoint;
+    private Vector3 previousPoint;    
+    
+    public bool canDraw = false; // New toggle
+
 
     // --- NEW: We MUST enable the action for it to listen ---
     private void OnEnable()
@@ -28,7 +31,7 @@ public class HandDrawer : MonoBehaviour
 
     void Update()
     {
-        if (pinchAction == null || drawPoint == null) return;
+        if (!canDraw || pinchAction == null || drawPoint == null) return;
 
         // NEW: IsPressed() is much safer than checking a float value
         bool isPinching = pinchAction.action.IsPressed();
@@ -47,7 +50,8 @@ public class HandDrawer : MonoBehaviour
         }
     }
 
-    void StartNewLine()
+
+    /*void StartNewLine()
     {
         GameObject newLineObject = Instantiate(linePrefab);
         currentLine = newLineObject.GetComponent<LineRenderer>();
@@ -56,6 +60,18 @@ public class HandDrawer : MonoBehaviour
         currentLine.SetPosition(0, drawPoint.position);
         previousPoint = drawPoint.position;
     }
+    */
+    void StartNewLine()
+{
+    // Use 'transform' as the second argument to make the HandDrawer the parent
+    GameObject newLineObject = Instantiate(linePrefab, transform); 
+    
+    currentLine = newLineObject.GetComponent<LineRenderer>();
+    
+    currentLine.positionCount = 1;
+    currentLine.SetPosition(0, drawPoint.position);
+    previousPoint = drawPoint.position;
+}
 
     void UpdateLine()
     {
