@@ -1,32 +1,33 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro; // Required for TextMeshPro Dropdowns
 
 public class OpeningMenuManager : MonoBehaviour
 {
-    public GameObject moodPanel;
-    public GameObject timePanel;
+    [Header("UI References")]
+    public TMP_Dropdown moodDropdown;
+    public TMP_Dropdown timeDropdown;
 
-    // --- MOOD BUTTONS ---
-    public void SelectAnxious() { SessionData.chosenMood = "Anxious"; NextPanel(); }
-    public void SelectTired() { SessionData.chosenMood = "Tired"; NextPanel(); }
-    public void SelectStressed() { SessionData.chosenMood = "Stressed"; NextPanel(); }
-    public void SelectCreative() { SessionData.chosenMood = "Creative"; NextPanel(); }
-
-    private void NextPanel()
+    // This single function will be attached to your "Start" button
+    public void OnStartClicked()
     {
-        moodPanel.SetActive(false);
-        timePanel.SetActive(true);
-    }
+        // 1. Read the Mood Dropdown (0 = Anxious, 1 = Stressed, 2 = Tired, 3 = Creative)
+        int moodIndex = moodDropdown.value;
+        
+        if (moodIndex == 0) SessionData.chosenMood = "Anxious";
+        else if (moodIndex == 1) SessionData.chosenMood = "Stressed";
+        else if (moodIndex == 2) SessionData.chosenMood = "Tired";
+        else if (moodIndex == 3) SessionData.chosenMood = "Creative";
 
-    // --- TIME BUTTONS ---
-    public void StartTime2Min() { SessionData.chosenTime = 2f; LoadMeditation(); }
-    public void StartTime5Min() { SessionData.chosenTime = 5f; LoadMeditation(); }
-    public void StartTime10Min() { SessionData.chosenTime = 10f; LoadMeditation(); }
-    public void StartTime15Min() { SessionData.chosenTime = 15f; LoadMeditation(); }
+        // 2. Read the Time Dropdown (0 = 2min, 1 = 5min, 2 = 10min, 3 = 15min)
+        int timeIndex = timeDropdown.value;
+        
+        if (timeIndex == 0) SessionData.chosenTime = 2f;
+        else if (timeIndex == 1) SessionData.chosenTime = 5f;
+        else if (timeIndex == 2) SessionData.chosenTime = 10f;
+        else if (timeIndex == 3) SessionData.chosenTime = 15f;
 
-    private void LoadMeditation()
-    {
-        // Loads Scene 2. Make sure the name matches your scene EXACTLY!
-        SceneManager.LoadScene("EnterMeditation"); 
+        // 3. Load the Meditation Scene
+        SceneManager.LoadScene("EnterMeditation");
     }
 }
