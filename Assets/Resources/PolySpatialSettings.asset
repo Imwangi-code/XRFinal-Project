@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019d9e67133646548a506370e966316a, type: 3}
   m_Name: PolySpatialSettings
   m_EditorClassIdentifier: 
-  m_FullUnityVersion: 
+  m_FullUnityVersion: 6000.3.13f1 (8c4f11e4fb20)
   m_DisablePolySpatial: 0
   m_PackageVersion: 3.1.4
   m_EnableStatistics: 0
