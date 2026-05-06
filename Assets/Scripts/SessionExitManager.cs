@@ -18,6 +18,6 @@ public class SessionExitManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         // Replace "OpeningMenu" with the EXACT name of your first scene!
-        SceneManager.LoadScene("OpeningMenu"); 
+        SceneManager.LoadScene("OpeningScene"); 
     }
 }
