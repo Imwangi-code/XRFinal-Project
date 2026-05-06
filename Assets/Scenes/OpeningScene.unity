@@ -956,7 +956,7 @@ MonoBehaviour:
   m_OutputConfiguration: {fileID: 11400000, guid: 6bbe5ea8b330c4754ab7928a1a1999c2, type: 2}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3221225783
   OpenWindowOnLoad: 1
   m_TargetDisplay: 0
   m_ShowVolumeCameraEventsFoldout: 0
