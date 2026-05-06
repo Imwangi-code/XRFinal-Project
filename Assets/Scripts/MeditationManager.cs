@@ -102,10 +102,10 @@ public class MeditationManager : MonoBehaviour
         // Wait the remaining time (Total Minutes - 1 minute)
         float remainingMinutes = totalMinutes - 1f;
         
-        // If they chose 2 mins, it waits 1 more minute. If 5 mins, it waits 4 more mins.
+        // If they chose 2 mins, it waits 10 more seconds... If 5 minutes, it waits 40 more seconds.
         if (remainingMinutes > 0)
         {
-            yield return new WaitForSeconds(remainingMinutes * 60f);
+            yield return new WaitForSeconds(remainingMinutes * 10f);
         }
 
         // Time is up! 
