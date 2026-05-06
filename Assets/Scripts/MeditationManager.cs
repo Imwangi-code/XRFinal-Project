@@ -9,6 +9,7 @@ public class MeditationManager : MonoBehaviour
     public MeshRenderer skyboxRenderer;
     public GameObject drawManager;
     public GameObject doorPromptUI;
+    public GameObject exitButton; // Change 1: Added reference variable
     public AudioSource voiceCoach;
     public AudioSource ambientLoop;
 
@@ -102,10 +103,10 @@ public class MeditationManager : MonoBehaviour
         // Wait the remaining time (Total Minutes - 1 minute)
         float remainingMinutes = totalMinutes - 1f;
         
-        // If they chose 2 mins, it waits 10 more seconds... If 5 minutes, it waits 40 more seconds.
+        // If they chose 2 mins, it waits 1 more minute... If 5 minutes, it waits 4 more minutes.
         if (remainingMinutes > 0)
         {
-            yield return new WaitForSeconds(remainingMinutes * 10f);
+            yield return new WaitForSeconds(remainingMinutes * 60f);
         }
 
         // Time is up! 
@@ -115,7 +116,8 @@ public class MeditationManager : MonoBehaviour
         SwitchToNextScene();
     }
 
-    private void SwitchToNextScene()
+    // Change 2: Changed 'private' to 'public'
+    public void SwitchToNextScene() 
     {
         if (!string.IsNullOrEmpty(nextSceneName))
         {
